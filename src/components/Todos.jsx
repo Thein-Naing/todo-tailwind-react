@@ -8,6 +8,7 @@ import Picker from "@emoji-mart/react";
 const Todos = () => {
   const [showEmoji, setShowEmoji] = useState(false);
   const [text, setText] = useState("");
+  const [todoList, setTodoList] = useState([]);
 
 
 
@@ -26,7 +27,7 @@ const Todos = () => {
     const todo = {
       id,
       text,
-      time: new Date.now()
+      time: new Date()
  };
  console.log(todo)
    }
@@ -48,9 +49,9 @@ const Todos = () => {
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder="Add your todo"
+              placeholder="Hi there... add your todo"
               className="w-full bg-transparent outline-none resize-none text-sm"
-              cols="30"
+              cols="40"
               rows="2"
             ></textarea>
 
