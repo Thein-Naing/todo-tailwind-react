@@ -1,4 +1,4 @@
-- You can check final site here: https://react-exercises-tailwind-todo.netlify.app/.
+- This is todolist in React JS and tailwind css tutorial from Milad Tech Youtube channel. You can check final site here: https://react-exercises-tailwind-todo.netlify.app/.
 you can add emoji with your todo.
 I am not satisfied or not so clear with adding emoji function and some tailwind structure.
 I will try again later.
