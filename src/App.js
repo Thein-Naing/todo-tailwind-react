@@ -1,9 +1,10 @@
+import Todos from "./components/Todos";
 
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-red-600 text-2'> Hello World</h1>
+      <Todos />
     </div>
   );
 }
