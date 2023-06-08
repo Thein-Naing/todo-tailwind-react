@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        todo : 'rgba(50, 50, 50, 0.98)',
-        bodyBg :'darkblue',
+        todo : 'white-smoke',
+        bodyBg :'rgba(50, 50, 50, 0.98)',
       },
       spacing: {
         '2rem': '2rem',
