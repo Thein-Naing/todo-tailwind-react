@@ -1,3 +1,8 @@
+# You can check final site here: https://react-exercises-tailwind-todo.netlify.app/.
+you can add emoji with your todo.
+I am not satisfied or not so clear with adding emoji function and some tailwind structure.
+I will try again later.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
