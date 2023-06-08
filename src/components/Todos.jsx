@@ -29,7 +29,10 @@ const Todos = () => {
       text,
       time: new Date()
  };
- console.log(todo)
+ setTodoList([...todoList, todo]);
+ setText('');
+ setShowEmoji();
+
    }
 
 
