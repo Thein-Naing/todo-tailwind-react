@@ -59,8 +59,8 @@ const Todos = () => {
           </div>
 
           <button
-            className="flex items-center capitalize gap-2 bg-yellow-200 text-black py-1.5
-          px-3 rounded-sm hover:bg-yellow-100
+            className="flex items-center capitalize gap-2 bg-yellow-200 text-grey py-1.5
+          px-3 rounded-sm hover:bg-blue-100
           "
           >
             <AiOutlinePlus />
