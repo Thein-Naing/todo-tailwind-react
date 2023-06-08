@@ -8,6 +8,14 @@ const Todos = () => {
   const [showEmoji, setShowEmoji] = useState(false);
   const[text, setText] = useState('');
 
+  const addEmoji = (e) => {
+    const symbol = e.unified.split("_");
+    const codeArray = [];
+    symbol.forEach((el) => codeArray.push('0x'+el));
+    let emoji = String.fromCodePoint(...codeArray);
+    setText(text + emoji);
+  }
+
 
   return (
     <div className="pt-3rem w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] mx-auto">
@@ -39,7 +47,7 @@ const Todos = () => {
             data = {data}
             emojiSize={20}
             emojiButtonSize={30}
-            omEmojiSelect={console.log}
+            omEmojiSelect={addEmoji}
             maxFrequentRows={0}
 
             />
