@@ -110,4 +110,4 @@ const Todo = ({ todoList, setTodoList, setEditTodo }) => {
   );
 };
 
-export default Todo
+export default Todo;

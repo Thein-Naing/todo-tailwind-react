@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         todo : 'rgba(192, 211, 223, 0.8)',
-        bodyBg :'white-smoke',
+        bodyBg :'#7d8ba4',
       },
       spacing: {
         '2rem': '2rem',
