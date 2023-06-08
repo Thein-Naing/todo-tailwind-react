@@ -6,6 +6,7 @@ import Picker from '@emoji-mart/react';
 
 const Todos = () => {
   const [showEmoji, setShowEmoji] = useState(false);
+  const[text, setText] = useState('');
 
 
   return (
@@ -18,6 +19,8 @@ const Todos = () => {
         <form className='flex items-start gap-2 pt-2rem'>
           <div className='w-full flex-items-end p-2 bg-todo rounded relative'>
             <textarea
+            value={text}
+            onChange={(e) => setText(e.target.value)}
             placeholder="Add your Todo"
             className="w-full bg-transparent outline-none resize-none text-sm"
 
