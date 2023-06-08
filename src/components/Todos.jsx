@@ -28,7 +28,7 @@ const Todos = () => {
               <BsEmojiSmile />
             </span>
 
-          <div className='absolute top-[100%] right-2'>
+          {showEmoji && <div className='absolute top-[100%] right-2'>
             <Picker
             data = {data}
             emojiSize={20}
@@ -37,7 +37,7 @@ const Todos = () => {
             maxFrequentRows={0}
 
             />
-             </div>
+             </div>}
           </div>
 
 
