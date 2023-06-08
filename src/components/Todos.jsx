@@ -24,7 +24,10 @@ const Todos = () => {
             cols="30"
             rows="2"
             ></textarea>
-            <span className='cursor-pointer hover:text-slate-300'>
+            <span className='cursor-pointer hover:text-slate-300'
+            onClick={()=> setShowEmoji(!showEmoji)}
+
+            >
               <BsEmojiSmile />
             </span>
 
