@@ -10,6 +10,7 @@ const Todos = () => {
   const [text, setText] = useState("");
 
 
+
   // add emoji
   const addEmoji = (e) => {
     const sym = e.unified.split("_");
@@ -19,6 +20,19 @@ const Todos = () => {
     setText(text + emoji);
    };
 
+   const addTodo = (e) => {
+    e.preventDefault();
+    const id = Math.floor(Math.random()* 100);
+    const todo = {
+      id,
+      text,
+      time: new Date.now()
+ };
+ console.log(todo)
+   }
+
+
+
   return (
     <div className="pt-3rem w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] mx-auto">
       <h1 className="text-2 font-medium text-center capitalize">
@@ -27,7 +41,9 @@ const Todos = () => {
 
       {/* todo input  */}
       <div>
-        <form  className="flex items-start gap-2 pt-2rem">
+        <form
+        onSubmit={addTodo}
+        className="flex items-start gap-2 pt-2rem">
           <div className="w-full flex items-end p-2 bg-todo rounded-sm relative">
             <textarea
               value={text}
